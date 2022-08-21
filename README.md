@@ -1,5 +1,6 @@
 # ProjectMania
-## Tracker projects progress
+
+Fullstack app for tracking projects progress
 
 ## Tech
 

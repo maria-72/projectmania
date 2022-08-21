@@ -6,3 +6,4 @@ Fullstack app for tracking projects progress
 
 - Go 1.19
 - React
+- Material UI

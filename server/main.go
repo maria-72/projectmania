@@ -19,7 +19,11 @@ func init() {
 
 	router = gin.Default()
 
-	router.GET("/get-projects", handlers.GetProjects)
+	v1 := router.Group("/api/v1")
+	{
+		v1.GET("/get-projects", handlers.GetProjects)
+	}
+
 }
 
 func main() {

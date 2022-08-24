@@ -1,7 +1,9 @@
 package main
 
 import (
+	"fmt"
 	"log"
+	"os"
 
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
@@ -27,5 +29,11 @@ func init() {
 }
 
 func main() {
-	log.Fatal(router.Run("localhost:8080"))
+	port, exists := os.LookupEnv("PORT")
+
+	if !exists {
+		port = "8081"
+	}
+
+	log.Fatal(router.Run(fmt.Sprintf(":%s", port)))
 }

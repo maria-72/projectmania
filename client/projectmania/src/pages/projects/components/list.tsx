@@ -1,7 +1,7 @@
 import { Accordion, AccordionSummary, Typography } from '@mui/material'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import React from 'react'
-import { Project } from '../models'
+import { Project } from '../../../models/project'
 
 interface ListProps {
     projectList: Project[]

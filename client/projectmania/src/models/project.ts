@@ -1,3 +1,3 @@
 export interface Project {
-    name: string;
+    name: string
 }
